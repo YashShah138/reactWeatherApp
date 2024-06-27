@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+     import React, { useState, useEffect } from 'react'
 import Search from './components/Search'
 import Location from './components/Location'
 import Data from './components/Data'

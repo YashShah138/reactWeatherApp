@@ -127,7 +127,7 @@ code {
 }
 
 .weather-data {
-    margin-top: 75px;
+    margin-top: -20px;
 }
 
 .col1 img {
@@ -163,9 +163,9 @@ code {
     background-color: #fff;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
     font-size: 30px;
-    width: 50%;
+    width: 90%;
     max-width: 200px;
-    margin-right: 100px;
+    /* margin-right: 100px; */
 }
 
 .col p {
