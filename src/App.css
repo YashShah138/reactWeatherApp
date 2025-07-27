@@ -1,4 +1,4 @@
-body {
+/* body {
     margin: 0;
     padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -29,7 +29,6 @@ code {
     border: #ffffff;
     border-radius: 20px;
     border-width: 5px;
-    /* background: black; */
     background: rgba(210, 225, 240, 1);
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
     margin: 50px auto 50px auto;
@@ -165,7 +164,6 @@ code {
     font-size: 30px;
     width: 90%;
     max-width: 200px;
-    /* margin-right: 100px; */
 }
 
 .col p {
@@ -173,4 +171,214 @@ code {
     margin-bottom: 5px;
     font-size: 20px;
     font-weight: 700;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+.App {
+    text-align: center;
+    background: radial-gradient(circle, rgba(240, 230, 195, 1), rgba(160, 200, 220, 1), rgba(190, 185, 215, 1));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: calc(10px + 2vmin);
+    color: rgba(32, 36, 50, 1);
+}
+
+.container {
+    border: #ffffff solid 5px;
+    border-radius: 20px;
+    background: rgba(210, 225, 240, 1);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    margin: 50px auto;
+    width: 90%;
+    max-width: 700px;
+    padding: 20px 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-dark {
+    border: #ffffff solid 5px;
+    border-radius: 50px;
+    background: #282c34;
+    padding: 5%;
+    margin-top: 5px;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.search input {
+    width: 70%;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px 15px;
+    font-size: 16px;
+    outline: 1px solid black;
+    background-color: #e3d6d6;
+    color: #555;
+}
+
+.search input::placeholder {
+    color: #555;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.search button {
+    width: 90px;
+    height: 44px;
+    border: none;
+    border-radius: 9%;
+    background-color: rgba(116, 166, 251, 1);
+    color: #fff;
+    font-size: 20px;
+    outline: 1px solid black;
+    cursor: pointer;
+}
+
+.weather-location h1 {
+    font-size: calc(20px + 2vmin);
+    margin-bottom: -15px;
+}
+
+.weather-location p {
+    font-size: calc(15px + 1vmin);
+}
+
+.userLocation {
+    width: 180px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(116, 166, 251, 0.8);
+    color: #fff;
+    font-size: 20px;
+    outline: 1px solid black;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1px;
+}
+
+.conditionText {
+    margin-top: -30px;
+    margin-bottom: -10px;
+    justify-content: center;
+    font-size: calc(20px + 2vmin);
+    font-weight: 600;
+}
+
+.weather-data {
+    margin-top: -20px;
+}
+
+.col1 img {
+    width: 150px;
+    margin-right: 20px;
+}
+
+.temp {
+    font-size: calc(30px + 2vmin);
+    font-weight: 550;
+}
+
+.avgTemp {
+    font-size: calc(15px + 1vmin);
+}
+
+.auxRow {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    font-size: calc(15px + 1vmin);
+    width: 90%;
+    max-width: 200px;
+}
+
+.col p {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: calc(10px + 1vmin);
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .search input {
+        width: 100%;
+    }
+
+    .search button {
+        width: 80px;
+        font-size: 18px;
+    }
+
+    .userLocation {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .col1 img {
+        width: 100px;
+    }
+
+    .temp {
+        font-size: calc(20px + 2vmin);
+    }
+
+    .weather-location h1 {
+        font-size: calc(15px + 2vmin);
+    }
+
+    .weather-location p {
+        font-size: calc(10px + 1vmin);
+    }
+
+    .conditionText {
+        font-size: calc(15px + 2vmin);
+    }
 }

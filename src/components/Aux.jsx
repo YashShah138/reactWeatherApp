@@ -26,4 +26,3 @@ function Aux({ data }) {
 }
 
 export default Aux
-
